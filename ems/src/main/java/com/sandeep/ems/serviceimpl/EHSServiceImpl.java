@@ -13,7 +13,6 @@ public class EHSServiceImpl implements EHSService {
 	@Autowired
 	private EHSDao ehsDao;
 
-	
 	@Override
 	public void registerEmployeeHealthInsurance(EHS ehs) {
 		ehsDao.save(ehs);

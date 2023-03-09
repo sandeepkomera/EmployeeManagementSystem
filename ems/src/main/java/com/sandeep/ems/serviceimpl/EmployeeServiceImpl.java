@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.sandeep.ems.dao.EmployeeDao;
 import com.sandeep.ems.entities.Employee;
-import com.sandeep.ems.service.EHSService;
 import com.sandeep.ems.service.EmployeeService;
 
 @Service
@@ -15,9 +14,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired
 	private EmployeeDao employeedao;
-
-	@Autowired
-	EHSService healthInsuranceService;
 
 	@Override
 	public Employee saveEmployee(Employee employee) {
